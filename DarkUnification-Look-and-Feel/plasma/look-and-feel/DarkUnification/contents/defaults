@@ -1,0 +1,24 @@
+[kdeglobals][KDE]
+widgetStyle=breeze
+
+[kdeglobals][General]
+ColorScheme=DarkUnification
+
+[kdeglobals][Icons]
+Theme=Ultimate Edition Dark Glass
+
+[plasmarc][Theme]
+name=DarkUnification
+
+[kcminputrc][Mouse]
+cursorTheme=Oxygen 04 Red Ruby
+
+[kwinrc][WindowSwitcher]
+LayoutName=org.kde.breeze.desktop
+
+[kwinrc][DesktopSwitcher]
+LayoutName=org.kde.breeze.desktop
+
+[kwinrc][org.kde.kdecoration2]
+library=org.kde.breeze
+theme=
