@@ -4,6 +4,8 @@
 # DarkUnification-Look-and-Feel
 A dark Plasma 5 Look and Feel theme with red highlights, loosely in the style of the Ubuntu Unity desktop
 
+T H I S   P R O J E C T   I S   S T I L L   I N   D E V E L O P M E N T
+
 ---------------------------------------------
 DarkUnification-Look-and-Feel notes
 ---------------------------------------------
