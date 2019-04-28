@@ -14,7 +14,7 @@ April 21, 2019: Initial 0.1 release of DarkUnification-Look-and-Feel to github
 - Dependencies: sed
 - Download and extract to the root of your home directory
 - launch the installer in your favorite terminal...
-         sh DarkUnification-Look-and-Feel-master/DarkUnification-Look-and-Feel/install.sh
+- sh DarkUnification-Look-and-Feel-master/DarkUnification-Look-and-Feel/install.sh
 - images face, Locked and Wilted are my own work
 - this is my first attempt at a complete Plasma 5 Look and Feel theme with a Bash Script installer so there may be issues
 - the first time it is used there are several KDE Plasma artifacts to download and install... please be patient
