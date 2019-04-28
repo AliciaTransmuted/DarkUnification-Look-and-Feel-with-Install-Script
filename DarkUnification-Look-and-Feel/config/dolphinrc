@@ -1,0 +1,58 @@
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC4AAAD9fwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawEAAAAmAAAAoAAAAFoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAADHAAADVAAAAFoBAAADAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACgEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAAGxwAAA/UAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+Window-Maximized 1080x1920=true
+
+[CompactMode]
+FontWeight=50
+
+[DetailsMode]
+FontWeight=50
+
+[FoldersPanel]
+HiddenFilesShown=true
+
+[General]
+EditableUrl=true
+GlobalViewProps=true
+ShowCopyMoveMenu=true
+ShowFullPath=true
+ShowFullPathInTitlebar=true
+ShowToolTips=true
+SplitView=true
+UseTabForSwitchingSplitView=true
+Version=200
+ViewPropsTimestamp=2019,2,12,15,47,15
+
+[IconsMode]
+FontWeight=50
+
+[KPropertiesDialog]
+Height 1080=478
+Width 1920=446
+
+[MainWindow]
+Height 1080=338
+Height 768=697
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAFeAAADy/wCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawEAAAAmAAACSwAAAFoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAJyAAABfwAAAFoBAAADAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACgEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAAF8QAAA8sAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1366=1318
+Width 1920=744
+Window-Maximized 1080x1920=true
+
+[Open-with settings]
+CompletionMode=1
+History=
+
+[PreviewSettings]
+Plugins=audiothumbnail,comicbookthumbnail,djvuthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,htmlthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,gsthumbnail,rawthumbnail,svgthumbnail,textthumbnail,ffmpegthumbs
+
+[SettingsDialog]
+Height 1080=493
+Width 1920=519
+
+[kuick-copy]
+Paths[$e]=$HOME/
+
+[kuick-move]
+Paths[$e]=$HOME/
