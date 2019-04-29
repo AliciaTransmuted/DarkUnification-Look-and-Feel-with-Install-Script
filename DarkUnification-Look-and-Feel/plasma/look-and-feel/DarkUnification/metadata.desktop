@@ -8,6 +8,6 @@ X-KDE-PluginInfo-EnabledByDefault=true
 X-KDE-PluginInfo-License=LGPL 3+
 X-KDE-PluginInfo-Name=DarkUnification
 X-KDE-PluginInfo-Version=0.1
-X-KDE-PluginInfo-Website=https://github.com/AliciaTransmuted/DarkUnification
+X-KDE-PluginInfo-Website=https://github.com/AliciaTransmuted/DarkUnification-Look-and-Feel
 X-KDE-ServiceTypes=Plasma/LookAndFeel
 X-KPackage-Dependencies=kns://icons.knsrc/api.kde-look.org/1159941,kns://xcursor.knsrc/api.kde-look.org/1197426,kns://sddmtheme.knsrc/api.kde-look.org/1214121,kns://plasmoids.knsrc/api.kde-look.org/998910,kns://plasmoids.knsrc/api.kde-look.org/1194339,kns://plasmoids.knsrc/api.kde-look.org/1181039
