@@ -82,7 +82,7 @@ echo "${backup_files}"" file(s) backed up to ""${backup_dir}"
 /bin/cp -rf ~/DarkUnification-Look-and-Feel-master/DarkUnification-Look-and-Feel/icons ~/.local/share/
 /bin/cp -rf ~/DarkUnification-Look-and-Feel-master/DarkUnification-Look-and-Feel/config/* ~/.config
 /bin/cp -rf ~/DarkUnification-Look-and-Feel-master/DarkUnification-Look-and-Feel/themes/* ~/.themes
-/bin/cp -rf ~//home/systst/DarkUnification-Look-and-Feel-master/DarkUnification-Look-and-Feel/plasma/look-and-feel/DarkUnification/contents/wallpaper/face ~
+/bin/cp -rf ~/DarkUnification-Look-and-Feel-master/DarkUnification-Look-and-Feel/plasma/look-and-feel/DarkUnification/contents/wallpaper/face ~/.face
 
 sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.local/share/plasma/look-and-feel/DarkUnification/contents/layouts/org.kde.plasma.desktop-layout.js
 
