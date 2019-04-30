@@ -14,7 +14,7 @@ if [ -e $1 ]; then
    if [ ! -d $2 ]; then
       mkdir -pv $2
    fi
-   /bin/cp -v $1 $2
+   /bin/cp -fv $1 $2
 fi
 return 0
 } 
@@ -120,13 +120,7 @@ cd "${install_dir}"
 DarkUnification Look and Feel Theme!
 Check Use Desktop Layout from Theme" --passivepopup "This popup will disappear in 15 seconds" 15 &
 # Setup the DarkUnification theme
-/usr/bin/kcmshell5 kcm_lookandfeel
-
-# Popup Message
-/usr/bin/kdialog --title "Please Select 
-Ultimate Edition Dark Glass Icon Theme!" --passivepopup "This popup will disappear in 15 seconds" 15 &
-# Icon Theme setup
-/usr/bin/kcmshell5 icons
+/usr/bin/kcmshell5 kcm_lookandfeel 2>/dev/null
 
 # Popup Message
 /usr/bin/kdialog --title "Please Select 
@@ -134,41 +128,7 @@ DarkUnification for GTK 2/3 Theme!
 Please Select 
 Icon Theme Ultimate Edition Dark Glass!" --passivepopup "This popup will disappear in 15 seconds" 15 &
 # GTK Theme setup
-/usr/bin/kcmshell5 kde-gtk-config
-
-# Popup Message
-#/usr/bin/kdialog --title "Please Select 
-#the prefered Splashscreen!" --passivepopup "This popup will disappear in 15 seconds" 15 &
-# Setup Splashscreen
-#/usr/bin/kcmshell5 kcm_splashscreen
-
-# Setup Color schemes
-#/usr/bin/kdialog --title "Please Select
-#DarkUnification Color Scheme!" --passivepopup "This popup will disappear in 15 seconds" 15 &
-# Setup the DarkUnification Color Scheme
-#/usr/bin/kcmshell5 colors
-
-# Popup Message
-#/usr/bin/kdialog --title "Click Adjust All Fonts
-#Please Select 
-#Ubuntu Fonts
-#for a complete Unity experience!" --passivepopup "This popup will disappear in 15 seconds" 15 &
-# Setup Fonts
-#/usr/bin/kcmshell5 fonts
-
-# Popup Message
-#/usr/bin/kdialog --title "Global Menu activation!
-#PLEASE CLICK ON FINE TUNING TAB!
-#CLICK ON MENUBAR STYLE
-#SELECT APPLICATION MENU WIDGET!" --passivepopup "This popup will disappear in 15 seconds" 15 &
-# Setup Global menu
-#/usr/bin/kcmshell5 style
-
-# Setup window decoration
-#/usr/bin/kdialog --title "Please Select
-#DarkUnification ????!" --passivepopup "This popup will disappear in 15 seconds" 15 &
-# Setup the DarkUnification window decoration
-#/usr/bin/kcmshell5 kwindecoration
+/usr/bin/kcmshell5 kde-gtk-config 2>/dev/null
 
 ### 
 ### Copy config files after theme setup
@@ -176,3 +136,5 @@ Icon Theme Ultimate Edition Dark Glass!" --passivepopup "This popup will disappe
 
 /bin/cp -rf "${install_dir}"/config/* ~/.config
 /bin/cp -rf "${install_dir}"/themes/* ~/.themes
+
+cd
