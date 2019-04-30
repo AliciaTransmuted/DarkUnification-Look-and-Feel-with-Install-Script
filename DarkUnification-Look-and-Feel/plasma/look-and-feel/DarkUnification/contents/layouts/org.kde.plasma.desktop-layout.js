@@ -15,7 +15,7 @@ activity.writeConfig("Image", "file:///home/xxUSERNAMExx/.local/share/plasma/loo
 // *****************************************************
 // Create Top Panel
 // *****************************************************
-panel = new plasma.Panel
+var panel = new Panel
 panel.location = "top"
 panel.alignment = "left"
 panel.height = gridUnit * 2
@@ -30,16 +30,16 @@ spacer.writeConfig("expanding", false)
 // Add Active Window Control to Top Panel
 //     ...   https://store.kde.org/p/998910/
 //     ...   added kns://plasmoids.knsrc/api.kde-look.org/998910 to X-KPackage-Dependencies= in metadata.desktop
-activewindow = panel.addWidget("org.kde.activeWindowControl")
-activewindow.writeConfig("buttonOrder", "close|minimize|maximize|alldesktops");
-activewindow.writeConfig("buttonSize", "1");
-activewindow.writeConfig("controlButtonsSpacing", "0");
-activewindow.writeConfig("doNotHideControlButtons", true);
-activewindow.writeConfig("horizontalScreenWidthPercent", "0.07");
-activewindow.writeConfig("showMaximize", true);
-activewindow.writeConfig("showMinimize", true);
-activewindow.writeConfig("showWindowIcon", false);
-activewindow.writeConfig("showWindowTitle", false);
+var activewindow = panel.addWidget("org.kde.activeWindowControl")
+activewindow.writeConfig("buttonOrder", "close|minimize|maximize|alldesktops")
+activewindow.writeConfig("buttonSize", "1")
+activewindow.writeConfig("controlButtonsSpacing", "0")
+activewindow.writeConfig("doNotHideControlButtons", true)
+activewindow.writeConfig("horizontalScreenWidthPercent", "0.07")
+activewindow.writeConfig("showMaximize", true)
+activewindow.writeConfig("showMinimize", true)
+activewindow.writeConfig("showWindowIcon", false)
+activewindow.writeConfig("showWindowTitle", false)
 
 // Add Global Menu to Top Panel
 panel.addWidget("org.kde.plasma.appmenu")
@@ -51,20 +51,20 @@ panel.addWidget("org.kde.plasma.panelspacer")
 panel.addWidget("org.kde.plasma.showdesktop")
 
 // Add System Tray to Top Panel
-systtray = panel.addWidget("org.kde.plasma.systemtray")
+var systtray = panel.addWidget("org.kde.plasma.systemtray")
 systtray.writeConfig("showAllItems", true)
 systtray.writeConfig("extraItems", "org.kde.discovernotifier,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.battery")
 systtray.writeConfig("knownItems", "org.kde.discovernotifier,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.battery")
 
 // Add Digital Clock to Top Panel
-clock = panel.addWidget("org.kde.plasma.digitalclock")
-clock.writeConfig("showDate", true);
-clock.writeConfig("dateFormat", "longDate");
-clock.writeConfig("showDay", true);
-clock.writeConfig("showSeconds", false);
-clock.writeConfig("showYear", true);
-clock.writeConfig("showLocalTimezone", true);
-clock.writeConfig("displayTimezoneAsCode", false);
+var clock = panel.addWidget("org.kde.plasma.digitalclock")
+clock.writeConfig("showDate", true)
+clock.writeConfig("dateFormat", "longDate")
+clock.writeConfig("showDay", true)
+clock.writeConfig("showSeconds", false)
+clock.writeConfig("showYear", true)
+clock.writeConfig("showLocalTimezone", true)
+clock.writeConfig("displayTimezoneAsCode", false)
 
 // Add USwitch to Top Panel
 //     ...   https://store.kde.org/p/1194339/
@@ -81,7 +81,7 @@ uswitcher.writeConfig("showTechnicalInfo", true)
 // Create Left Side Panel
 // *****************************************************
 
-var leftpanel = new plasma.Panel
+var leftpanel = new Panel
 leftpanel.location = "left"
 leftpanel.height = gridUnit * 2
 leftpanel.offset=panel.height
@@ -121,7 +121,7 @@ tasks.writeConfig("launchers", [
     'file:///usr/share/applications/firefox.desktop?wmClass=firefox',
     'file:///usr/share/applications/org.kde.konsole.desktop?wmClass=konsole',
     'file:///usr/share/applications/org.kde.dolphin.desktop?wmClass=dolphin',
-    'file:///usr/share/applications/org.kde.kate.desktop?wmClass=kate',
+//    'file:///usr/share/applications/org.kde.kate.desktop?wmClass=kate',
     'file:///usr/share/applications/systemsettings.desktop?wmClass=systemsettings',
 ].join(','))
 
@@ -137,4 +137,5 @@ windows.writeConfig("clickCommand","ShowDesktopGrid")
 leftpanel.addWidget("org.kde.plasma.trash")
 
 activity.currentConfigGroup = ["General"]
+activity.writeConfig("showToolbox", false)
 activity.writeConfig("immutability", 2)
