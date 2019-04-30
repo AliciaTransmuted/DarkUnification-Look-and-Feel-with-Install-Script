@@ -12,7 +12,7 @@ backup_config () {
 if [ -e $1 ]; then
    backup_files=$(( backup_files + 1 ))
    if [ ! -d $2 ]; then
-      mkdir -pv $2
+      mkdir -p $2
    fi
    /bin/cp -fv $1 $2
 fi
@@ -28,7 +28,7 @@ install_dir=$PWD
 user_name=$USER
 echo "Install DarkUnification KDE Plasma 5 Theme for ""${user_name}"
 
-backup_dir="/home/""${user_name}""/.local/share/plasma/look-and-feel/DarkUnification/backups/""$(date '+%Y-%m-%d-%H-%M-%S')"
+backup_dir="${install_dir}""/backups/""$(date '+%Y-%m-%d-%H-%M-%S')"
 echo "Backup Directory: ""${backup_dir}"
 
 backup_files=0
