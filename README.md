@@ -10,7 +10,7 @@ THIS PROJECT IS STILL IN DEVELOPMENT
 DarkUnification-Look-and-Feel notes
 ---------------------------------------------
 
-April 21, 2019: Initial 0.1 release of DarkUnification-Look-and-Feel to github
+April 30, 2019: Initial 0.1 release of DarkUnification-Look-and-Feel to github
 - Dependencies: sed
 - Download and extract to the root of your home directory
 - launch the installer in your favorite terminal...
