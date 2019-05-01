@@ -189,4 +189,5 @@ add_to_log
 log_entry="${log_heading_1}"
 add_to_log
 
+cd /
 cd "/home/""${user_name}"
