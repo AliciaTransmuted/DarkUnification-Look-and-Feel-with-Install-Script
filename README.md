@@ -14,8 +14,8 @@ April 30, 2019: Initial 0.1 release of DarkUnification-Look-and-Feel to github
 - Dependencies: sed tar
 - Download and extract anywhere in to your home directory... eg. under ~/Downloads
 - From your favorite terminal emulator, launch install.sh
-- For example, say you extracted to ~/DDownloads/DarkUnification-Look-and-Feel-master/DarkUnification-Look-and-Feel
-- Running
+- E.G. say you extracted to ~/Downloads/DarkUnification-Look-and-Feel-master/DarkUnification-Look-and-Feel
+- Running:
 - sh Downloads/DarkUnification-Look-and-Feel-master/DarkUnification-Look-and-Feel/install.sh
 - from your home directory... OR
 - cd Downloads/DarkUnification-Look-and-Feel-master/DarkUnification-Look-and-Feel && sh install.sh
