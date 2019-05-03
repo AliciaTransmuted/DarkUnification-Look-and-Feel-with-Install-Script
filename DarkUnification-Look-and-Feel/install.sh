@@ -47,7 +47,6 @@ fi
 
 backup_dir="${install_dir}""/backups/""$(date '+%Y-%m-%d-%H-%M-%S')"
 installation_log="${backup_dir}""/installation.log"
-templog="${backup_dir}""/temp.log"
 backup_files=0
 log_heading_1="================================================================================================================="
 log_heading_2="-------------------------------------------------------------------------------------------------------------"
@@ -153,22 +152,31 @@ make_dir "${temp_dir}"
 /bin/cp -rf "${install_dir}"/color-schemes ~/.local/share/
 /bin/cp -rf "${install_dir}"/plasma ~/.local/share/
 /bin/cp -rf "${install_dir}"/icons/* ~/.local/share/icons
-/bin/cp -rf "${install_dir}"/config/* ~/.config
-/bin/cp -rf "${install_dir}"/themes/* ~/.themes
 
 ### 
 ### Install the DarkUnification Theme
 ### 
 
-sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.config/kscreenlockerrc
-sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.config/plasmarc
 sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.local/share/plasma/look-and-feel/DarkUnification/contents/layouts/org.kde.plasma.desktop-layout.js
 
 cd ~/.local/share/plasma/look-and-feel
-tar -czvf ~/DarkUnification.tar.gz DarkUnification/*
+tar -czvf ~/DarkUnification.tar.gz DarkUnification/* | tee -a "${installation_log}"
 cd "${install_dir}"
 
-/usr/bin/kpackagetool5 -r ~/DarkUnification.tar.gz
+/usr/bin/kpackagetool5 -r ~/DarkUnification.tar.gz > /dev/null 2>&1
+
+log_entry="${log_heading_3}"
+add_to_log
+
+log_entry="This next process may take some time as several Plasma 5 plasmoids must be installed"
+add_to_log
+
+log_entry="...please be patient"
+add_to_log
+
+log_entry="${log_heading_3}"
+add_to_log
+
 /usr/bin/kpackagetool5 -i ~/DarkUnification.tar.gz | tee -a "${installation_log}"
 
 ### 
@@ -183,28 +191,24 @@ Check Use Desktop Layout from Theme" --passivepopup "This popup will disappear i
 /usr/bin/kcmshell5 kcm_lookandfeel 2>/dev/null
 
 # Popup Message
-/usr/bin/kdialog --title "Please Select 
-DarkUnification for GTK 2/3 Theme!
-Please Select 
-Icon Theme Ultimate Edition Dark Glass!" --passivepopup "This popup will disappear in 15 seconds" 15 &
-# GTK Theme setup
-/usr/bin/kcmshell5 kde-gtk-config 2>/dev/null
-
-# Popup Message
 /usr/bin/kdialog --title "Please Select
 Chili for Plasma Login Screen (SDDM)!
 Enter password when requested" --passivepopup "This popup will disappear in 15 seconds" 15 &
 # Setup the Chili for Plasma Login Screen (SDDM)
 /usr/bin/kcmshell5 kcm_sddm 2>/dev/null
 
-### 
-### Copy config files after theme setup
-### 
+/bin/cp -rf "${install_dir}"/config/* ~/.config
+/bin/cp -rf "${install_dir}"/themes/* ~/.themes
+sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.config/kscreenlockerrc
+sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.config/plasmarc
 
-###/bin/cp -rf "${install_dir}"/config/* ~/.config
-###/bin/cp -rf "${install_dir}"/themes/* ~/.themes
-###sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.config/kscreenlockerrc
-###sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.config/plasmarc
+# Popup Message
+/usr/bin/kdialog --title "Please Select 
+DarkUnification for GTK 2/3 Theme!
+Please Select 
+Icon Theme Ultimate Edition Dark Glass!" --passivepopup "This popup will disappear in 15 seconds" 15 &
+# GTK Theme setup
+/usr/bin/kcmshell5 kde-gtk-config 2>/dev/null
 
 log_entry="${log_heading_2}"
 add_to_log
