@@ -201,10 +201,10 @@ Enter password when requested" --passivepopup "This popup will disappear in 15 s
 ### Copy config files after theme setup
 ### 
 
-/bin/cp -rf "${install_dir}"/config/* ~/.config
-/bin/cp -rf "${install_dir}"/themes/* ~/.themes
-sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.config/kscreenlockerrc
-sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.config/plasmarc
+###/bin/cp -rf "${install_dir}"/config/* ~/.config
+###/bin/cp -rf "${install_dir}"/themes/* ~/.themes
+###sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.config/kscreenlockerrc
+###sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.config/plasmarc
 
 log_entry="${log_heading_2}"
 add_to_log
