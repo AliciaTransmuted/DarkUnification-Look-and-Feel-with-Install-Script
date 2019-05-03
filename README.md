@@ -4,13 +4,15 @@
 # DarkUnification-Look-and-Feel
 A dark Plasma 5 Look and Feel theme with red highlights, loosely in the style of the Ubuntu Unity desktop
 
-THIS PROJECT IS STILL IN DEVELOPMENT, BUT IS READY TO BE USED
+THIS PROJECT IS STILL IN DEVELOPMENT, BUT IS READY TO BE USED and/or TESTED
+- Ensure your file manager is set to view Hidden Files to see backup files
+- You may have to reapply the DarkUnification Look and Feel once more after installation/reboot
 
 ---------------------------------------------
 DarkUnification-Look-and-Feel notes
 ---------------------------------------------
 
-April 30, 2019: Initial 0.1 release of DarkUnification-Look-and-Feel to github
+May 2, 2019: Initial 0.1 release of DarkUnification-Look-and-Feel to github
 - Dependencies: sed tar
 - Download and extract anywhere in to your home directory... eg. under ~/Downloads
 - From your favorite terminal emulator, launch install.sh
