@@ -1,5 +1,5 @@
 [Desktop Entry]
-Comment=A dark Plasma 5 Look and Feel theme with red highlights, loosely in the style of the Ubuntu Unity desktop
+Comment=A dark KDE Plasma 5 Look and Feel theme with red highlights, loosely in the style of the Ubuntu Unity desktop
 Name=DarkUnification
 X-KDE-PluginInfo-Author=AliciaTransmuted
 X-KDE-PluginInfo-Category=Plasma Look And Feel
@@ -7,7 +7,7 @@ X-KDE-PluginInfo-Email=alicia.art.and.photography@gmail.com
 X-KDE-PluginInfo-EnabledByDefault=true
 X-KDE-PluginInfo-License=LGPL 3+
 X-KDE-PluginInfo-Name=DarkUnification
-X-KDE-PluginInfo-Version=0.1
-X-KDE-PluginInfo-Website=https://github.com/AliciaTransmuted/DarkUnification-Look-and-Feel
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=https://github.com/AliciaTransmuted/DarkUnification-Look-and-Feel-Theme
 X-KDE-ServiceTypes=Plasma/LookAndFeel
-X-KPackage-Dependencies=kns://icons.knsrc/api.kde-look.org/1159941,kns://xcursor.knsrc/api.kde-look.org/1197426,kns://sddmtheme.knsrc/api.kde-look.org/1214121,kns://plasmoids.knsrc/api.kde-look.org/998910,kns://plasmoids.knsrc/api.kde-look.org/1194339,kns://plasmoids.knsrc/api.kde-look.org/1181039
+X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1308877,kns://plasma-themes.knsrc/api.kde-look.org/1308882,kns://cgcgtk3.knsrc/api.kde-look.org/1308890,kns://icons.knsrc/api.kde-look.org/1159941,kns://xcursor.knsrc/api.kde-look.org/1197426,kns://plasmoids.knsrc/api.kde-look.org/998910,kns://plasmoids.knsrc/api.kde-look.org/1194339,kns://plasmoids.knsrc/api.kde-look.org/1181039,kns://wallpaper.knsrc/api.kde-look.org/1308884,kns://cgctheme.knsrc/api.kde-look.org/1308890,kns://sddmtheme.knsrc/api.kde-look.org/1214121
