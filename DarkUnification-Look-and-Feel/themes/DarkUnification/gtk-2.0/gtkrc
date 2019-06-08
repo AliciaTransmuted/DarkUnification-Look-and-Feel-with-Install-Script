@@ -1,0 +1,82 @@
+# Theme:       DarkUnification
+# Description: DarkUnification (based on Breeze theme for GTK+2)
+
+# Text/base
+gtk-color-scheme = "text_color:#bfbfbf"
+gtk-color-scheme = "base_color:#090909"
+
+# Foreground/background
+gtk-color-scheme = "fg_color:#bfbfbf"
+gtk-color-scheme = "bg_color:#090909"
+
+# Selected foreground/background
+gtk-color-scheme = "selected_fg_color:#bfbfbf"
+gtk-color-scheme = "selected_bg_color:#700000"
+
+# Insensitive foreground/background
+gtk-color-scheme = "insensitive_fg_color:#565656"
+gtk-color-scheme = "insensitive_bg_color:#090909"
+gtk-color-scheme = "insensitive_text_color:#565656"
+gtk-color-scheme = "insensitive_base_color:#090909"
+
+# Accents
+gtk-color-scheme = "primary_caret_color:#bfbfbf"
+gtk-color-scheme = "secondary_caret_color:#565656"
+gtk-color-scheme = "accent_bg_color:#090909"
+
+# Borders
+gtk-color-scheme = "border_color:#090909"
+
+# Titlebars
+gtk-color-scheme = "titlebar_fg_color:#bfbfbf"
+gtk-color-scheme = "titlebar_bg_color:#090909"
+
+# Panels
+gtk-color-scheme = "panel_fg_color:#bfbfbf"
+gtk-color-scheme = "panel_bg_color:#090909"
+
+# Menus
+gtk-color-scheme = "menu_color:#bfbfbf"
+gtk-color-scheme = "menu_fg_color:#bfbfbf"
+gtk-color-scheme = "menu_bg_color:#090909"
+gtk-color-scheme = "menubar_fg_color:#bfbfbf"
+gtk-color-scheme = "menubar_bg_color:#090909"
+
+# Toolbars
+gtk-color-scheme = "toolbar_fg_color:#bfbfbf"
+gtk-color-scheme = "toolbar_bg_color:#090909"
+
+# Treeview headers
+gtk-color-scheme = "column_header_color:#090909"
+gtk-color-scheme = "hover_column_header_color:#090909"
+
+# Window decoration
+gtk-color-scheme = "window_color:#090909"
+
+# Tooltips
+gtk-color-scheme = "tooltip_fg_color:#565656"
+gtk-color-scheme = "tooltip_bg_color:#090909"
+
+# Buttons
+gtk-color-scheme = "btn_fg_color:#bfbfbf"
+gtk-color-scheme = "btn_bg_color:#090909"
+gtk-color-scheme = "button_fg_color:#bfbfbf"
+gtk-color-scheme = "button_bg_color:#090909"
+gtk-color-scheme = "button_insensitive_fg_color:#565656"
+gtk-color-scheme = "button_active:#090909"
+
+# Links
+gtk-color-scheme = "link_color:##aaaa00"
+gtk-color-scheme = "visited_link_color:##ffaaff"
+
+include "widgets/default"
+include "widgets/buttons"
+include "widgets/menu"
+include "widgets/entry"
+include "widgets/notebook"
+include "widgets/range"
+include "widgets/scrollbar"
+include "widgets/toolbar"
+include "widgets/progressbar"
+include "widgets/misc"
+include "widgets/styles"
