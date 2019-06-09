@@ -5,9 +5,11 @@
 
 A dark Plasma 5 Look and Feel theme with red highlights, loosely in the style of the Ubuntu Unity desktop, including a shell script to backup KDE config files, set up all wallpapers and KDE settings.
 
-THIS PROJECT IS STILL IN DEVELOPMENT, BUT IS READY TO BE USED and/or TESTED
+THIS PROJECT IS READY TO BE USED and/or TESTED
 - Ensure your file manager is set to view Hidden Files to see backup files
 - You may have to reapply the DarkUnification Look and Feel once more after installation/reboot
+
+You may now also download the "DarkUnification-Look-and-Feel-Theme" directly from the KDE Plasma System Settings application.
 
 ---------------------------------------------
 DarkUnification-Look-and-Feel notes
