@@ -1,8 +1,9 @@
 ![Screenshot](https://i.imgur.com/LlExEbZ.png)
 ![Screenshot](https://i.imgur.com/5Oy9zJT.png)
 
-# DarkUnification-Look-and-Feel
-A dark Plasma 5 Look and Feel theme with red highlights, loosely in the style of the Ubuntu Unity desktop
+# DarkUnification-Look-and-Feel-with-Install-Script
+
+A dark Plasma 5 Look and Feel theme with red highlights, loosely in the style of the Ubuntu Unity desktop, including a shell script to backup KDE config files, set up all wallpapers and KDE settings.
 
 THIS PROJECT IS STILL IN DEVELOPMENT, BUT IS READY TO BE USED and/or TESTED
 - Ensure your file manager is set to view Hidden Files to see backup files
@@ -25,3 +26,5 @@ May 2, 2019: Initial 0.1 release of DarkUnification-Look-and-Feel to github
 - images face, Locked and Wilted are my own work
 - this is my first attempt at a complete Plasma 5 Look and Feel theme with a Bash Script installer so there may be issues
 - the first time it is used there are several KDE Plasma artifacts to download and install, so please be patient
+
+June 8, 2019: Renamed git repository to "DarkUnification-Look-and-Feel-with-Install-Script" to better differenciatte it from the standard "DarkUnification-Look-and-Feel-Theme" repository.
