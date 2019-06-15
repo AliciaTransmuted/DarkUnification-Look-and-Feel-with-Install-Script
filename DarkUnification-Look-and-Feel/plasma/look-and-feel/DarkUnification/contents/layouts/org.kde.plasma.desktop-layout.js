@@ -10,7 +10,7 @@ activity.writeConfig("immutability", 2)
 activity.currentConfigGroup = ["General"]
 activity.writeConfig("showToolbox", false)
 activity.currentConfigGroup = ["Wallpaper", "org.kde.image", "General"]
-activity.writeConfig("Image", "file:///home/xxUSERNAMExx/.local/share/plasma/look-and-feel/DarkUnification/contents/wallpaper/Wilted.jpg")
+activity.writeConfig("Image", "file:///home/xxUSERNAMExx/.local/share/plasma/look-and-feel/DarkUnification/contents/wallpaper/A Time To Stand by AliciaTransmuted.jpg")
 
 // *****************************************************
 // Create Top Panel
