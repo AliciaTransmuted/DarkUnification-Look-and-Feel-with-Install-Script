@@ -1,14 +1,21 @@
 #!/bin/bash
 
-###
-### Dependancies: sed tar
-###
+#-------------------------------
+# install.sh
+# version 1.0
+# Install DarkUnification KDE Plasma 5 Look and Feel Theme
+# June 15, 2019
+# AliciaTransmuted
+# https://github.com/AliciaTransmuted/DarkUnification-Look-and-Feel-with-Install-Script
+# -------------------------------
+# dependancies: sed tar
+
 
 ###
 ### Functions
 ###
 
-backup_file () {
+function backup_file () {
 if [ -e $1 ]; then
    backup_files=$(( backup_files + 1 ))
    make_dir $2
@@ -17,27 +24,33 @@ fi
 return 0
 } 
 
-make_dir () {
+function make_dir () {
 if [ ! -d $1 ]; then
    mkdir -pv $1  | tee -a "${installation_log}"
 fi
 return 0
 } 
 
-add_to_log () {
+function add_to_log () {
 echo "${log_entry}" >> "${installation_log}"
 printf '%s\n' "${log_entry}"
 return 0
 } 
 
+
 ###
 ### Setup variables
 ###
 
+username=$USER
+
+if [ -n "$SUDO_USER" ]; then
+   username=$SUDO_USER
+fi
+
 shell_name="`basename "$0"`"
 shell_dir="`dirname "$0"`"
 working_dir=$PWD
-user_name=$USER
 
 if [ "${shell_dir}" = "." ]; then
    install_dir="${working_dir}"
@@ -59,7 +72,7 @@ log_entry="${log_heading_1}"
 echo "${log_entry}" > "${installation_log}"
 printf '%s\n' "${log_entry}"
 
-log_entry="Install DarkUnification KDE Plasma 5 Theme for User: ""${user_name}"
+log_entry="Install DarkUnification KDE Plasma 5 Theme for User: ""${username}"
 add_to_log
 
 log_entry="${log_heading_2}"
@@ -75,47 +88,19 @@ add_to_log
 ### Backup all config files this script will overwrite to a user named, date and time stamped directory
 ### 
 
-temp_in_file="/home/""${user_name}""/.face"
+temp_in_file="/home/""${username}""/.face"
 temp_out_dir="${backup_dir}"
 backup_file "${temp_in_file}" "${temp_out_dir}"
 
-temp_in_file="/home/""${user_name}""/.config/gtk-3.0/gtk.css"
+temp_in_file="/home/""${username}""/.config/gtk-3.0/settings.ini"
 temp_out_dir="${backup_dir}""/.config/gtk-3.0"
 backup_file "${temp_in_file}" "${temp_out_dir}"
 
-temp_in_file="/home/""${user_name}""/.config/gtk-3.0/settings.ini"
-temp_out_dir="${backup_dir}""/.config/gtk-3.0"
-backup_file "${temp_in_file}" "${temp_out_dir}"
-
-temp_in_file="/home/""${user_name}""/.config/breezerc"
+temp_in_file="/home/""${username}""/.config/dolphinrc"
 temp_out_dir="${backup_dir}""/.config"
 backup_file "${temp_in_file}" "${temp_out_dir}"
 
-temp_in_file="/home/""${user_name}""/.config/dolphinrc"
-temp_out_dir="${backup_dir}""/.config"
-backup_file "${temp_in_file}" "${temp_out_dir}"
-
-temp_in_file="/home/""${user_name}""/.config/gtkrc"
-temp_out_dir="${backup_dir}""/.config"
-backup_file "${temp_in_file}" "${temp_out_dir}"
-
-temp_in_file="/home/""${user_name}""/.config/gtkrc-2.0"
-temp_out_dir="${backup_dir}""/.config"
-backup_file "${temp_in_file}" "${temp_out_dir}"
-
-temp_in_file="/home/""${user_name}""/.config/kscreenlockerrc"
-temp_out_dir="${backup_dir}""/.config"
-backup_file "${temp_in_file}" "${temp_out_dir}"
-
-temp_in_file="/home/""${user_name}""/.config/kwinrc"
-temp_out_dir="${backup_dir}""/.config"
-backup_file "${temp_in_file}" "${temp_out_dir}"
-
-temp_in_file="/home/""${user_name}""/.config/plasma-org.kde.plasma.desktop-appletsrc"
-temp_out_dir="${backup_dir}""/.config"
-backup_file "${temp_in_file}" "${temp_out_dir}"
-
-temp_in_file="/home/""${user_name}""/.config/plasmarc"
+temp_in_file="/home/""${username}""/.config/kscreenlockerrc"
 temp_out_dir="${backup_dir}""/.config"
 backup_file "${temp_in_file}" "${temp_out_dir}"
 
@@ -137,16 +122,16 @@ add_to_log
 ### Copy all data from DarkUnification Folders to new directories
 ### 
 
-temp_dir="/home/""${user_name}""/Pictures/DarkUnification"
+temp_dir="/home/""${username}""/Pictures/DarkUnification"
 make_dir "${temp_dir}"
 
-temp_dir="/home/""${user_name}""/.local/share/color-schemes"
+temp_dir="/home/""${username}""/.local/share/color-schemes"
 make_dir "${temp_dir}"
 
-temp_dir="/home/""${user_name}""/.local/share/icons"
+temp_dir="/home/""${username}""/.local/share/icons"
 make_dir "${temp_dir}"
 
-temp_dir="/home/""${user_name}""/.local/share/plasma"
+temp_dir="/home/""${username}""/.local/share/plasma"
 make_dir "${temp_dir}"
 
 /bin/cp -rf "${install_dir}"/plasma/look-and-feel/DarkUnification/contents/wallpaper/face ~/.face
@@ -163,7 +148,7 @@ make_dir "${temp_dir}"
 ### Install the DarkUnification Theme
 ### 
 
-sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.local/share/plasma/look-and-feel/DarkUnification/contents/layouts/org.kde.plasma.desktop-layout.js
+sed -i -e s/xxUSERNAMExx/"${username}"/g ~/.local/share/plasma/look-and-feel/DarkUnification/contents/layouts/org.kde.plasma.desktop-layout.js
 
 cd ~/.local/share/plasma/look-and-feel
 tar -czvf ~/DarkUnification.tar.gz DarkUnification/* | tee -a "${installation_log}"
@@ -174,7 +159,7 @@ cd $PWD
 log_entry="${log_heading_3}"
 add_to_log
 
-log_entry="This next process may take some time as several Plasma 5 plasmoids must be installed"
+log_entry="This next process may take some time as several Plasma 5 objects must be installed"
 add_to_log
 
 log_entry="***** Please enter your sudo password when requested *****"
@@ -209,18 +194,17 @@ Enter password when requested" --passivepopup "This popup will disappear in 15 s
 # Setup the Chili for Plasma Login Screen (SDDM)
 /usr/bin/kcmshell5 kcm_sddm 2>/dev/null
 
-temp_dir="/home/""${user_name}""/.config"
+temp_dir="/home/""${username}""/.config"
 make_dir "${temp_dir}"
 
-temp_dir="/home/""${user_name}""/.themes"
+temp_dir="/home/""${username}""/.themes"
 make_dir "${temp_dir}"
 
 /bin/cp -rf "${install_dir}"/config/* ~/.config
 
 /bin/cp -rf "${install_dir}"/themes/* ~/.themes
 
-sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.config/kscreenlockerrc
-sed -i -e s/xxUSERNAMExx/"${user_name}"/g ~/.config/plasmarc
+sed -i -e s/xxUSERNAMExx/"${username}"/g ~/.config/kscreenlockerrc
 
 # Popup Message
 /usr/bin/kdialog --title "Please Select 
