@@ -1,6 +1,0 @@
-[Common]
-ShadowStrength=89
-
-[Windeco]
-DrawBorderOnMaximizedWindows=true
-DrawTitleBarSeparator=false
