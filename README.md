@@ -1,4 +1,4 @@
-![Screenshot](https://i.imgur.com/LlExEbZ.png)
+![Screenshot](https://i.imgur.com/jHmzEqR.png)
 ![Screenshot](https://i.imgur.com/5Oy9zJT.png)
 
 # DarkUnification-Look-and-Feel-with-Install-Script
