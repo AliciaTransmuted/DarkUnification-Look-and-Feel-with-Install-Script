@@ -19,13 +19,13 @@ May 2, 2019: Initial 0.1 release of DarkUnification-Look-and-Feel to github
 - Dependencies: sed tar
 - Download and extract anywhere in to your home directory... eg. under ~/Downloads
 - From your favorite terminal emulator, launch install.sh
-- E.G. say you extracted to ~/Downloads/DarkUnification-Look-and-Feel-master/DarkUnification-Look-and-Feel
+- E.G. say you extracted to ~/Downloads/DarkUnification-Look-and-Feel-with-Install-Script-master/DarkUnification-Look-and-Feel
 - Running:
-- sh Downloads/DarkUnification-Look-and-Feel-master/DarkUnification-Look-and-Feel/install.sh
+- sh Downloads/DarkUnification-Look-and-Feel-with-Install-Script-master/DarkUnification-Look-and-Feel/install.sh
 - from your home directory... OR
-- cd Downloads/DarkUnification-Look-and-Feel-master/DarkUnification-Look-and-Feel && sh install.sh
+- cd Downloads/DarkUnification-Look-and-Feel-with-Install-Script-master/DarkUnification-Look-and-Feel && sh install.sh
 - will both work
-- images face, Locked and Wilted are my own work
+- images face, Assimilation, A Time To Stand, Harvest Moon, Locked and Wilted are my own work
 - this is my first attempt at a complete Plasma 5 Look and Feel theme with a Bash Script installer so there may be issues
 - the first time it is used there are several KDE Plasma artifacts to download and install, so please be patient
 
