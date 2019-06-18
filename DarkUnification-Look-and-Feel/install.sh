@@ -104,6 +104,10 @@ temp_in_file="/home/""${username}""/.config/kscreenlockerrc"
 temp_out_dir="${backup_dir}""/.config"
 backup_file "${temp_in_file}" "${temp_out_dir}"
 
+temp_in_file="/home/""${username}""/.gtkrc-2.0"
+temp_out_dir="${backup_dir}"
+backup_file "${temp_in_file}" "${temp_out_dir}"
+
 log_entry="${log_heading_3}"
 add_to_log
 
@@ -201,6 +205,8 @@ temp_dir="/home/""${username}""/.themes"
 make_dir "${temp_dir}"
 
 /bin/cp -rf "${install_dir}"/config/* ~/.config
+
+/bin/cp -rf "${install_dir}"/config-other/gtkrc-2.0 ~/.gtkrc-2.0
 
 /bin/cp -rf "${install_dir}"/themes/* ~/.themes
 
