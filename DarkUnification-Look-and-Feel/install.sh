@@ -15,7 +15,7 @@
 ### Functions
 ###
 
-function backup_file () {
+backup_file () {
 if [ -e $1 ]; then
    backup_files=$(( backup_files + 1 ))
    make_dir $2
@@ -24,14 +24,14 @@ fi
 return 0
 } 
 
-function make_dir () {
+make_dir () {
 if [ ! -d $1 ]; then
    mkdir -pv $1  | tee -a "${installation_log}"
 fi
 return 0
 } 
 
-function add_to_log () {
+add_to_log () {
 echo "${log_entry}" >> "${installation_log}"
 printf '%s\n' "${log_entry}"
 return 0
