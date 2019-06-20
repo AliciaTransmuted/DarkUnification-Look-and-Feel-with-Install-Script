@@ -5,11 +5,18 @@
 
 A dark Plasma 5 Look and Feel theme with red highlights, loosely in the style of the Ubuntu Unity desktop, including a shell script to backup KDE config files, set up all wallpapers and KDE settings.
 
-THIS PROJECT IS READY TO BE USED and/or TESTED
-- Ensure your file manager is set to view Hidden Files to see backup files
-- You may have to reapply the DarkUnification Look and Feel once more after installation/reboot
+THIS PROJECT HAS BEEN TESTED WITH SEVERAL LINUX DISTROS AND IS READY TO BE USED
+- Ensure your file manager is set to view Hidden Files to see the backup files
 
-You may now also download the "DarkUnification-Look-and-Feel-Theme" directly from the KDE Plasma System Settings application.
+Alternatively, you can download the "DarkUnification Look and Feel Theme" using KDE Plasma System Settings
+- Navigate to "Workspace Theme" > "Look And Feel" OR "Look And Feel" from Plasma 5.16 and later
+- Press the "Get New Looks" button,
+- Search for "DarkUnification",
+- Click Install on "DarkUnification Look and Feel Theme",
+- Installation will take some time as it is downloading quite a few Plasma modules and widgets,
+- You will be asked to enter your sudo password in order to install the Chili SDDM Theme,
+- Once installed, click Close, select "DarkUnification", click "Use Desktop Layout from theme, and click Apply
+- The DarkUnification desktop will be applied
 
 ---------------------------------------------
 DarkUnification-Look-and-Feel notes
