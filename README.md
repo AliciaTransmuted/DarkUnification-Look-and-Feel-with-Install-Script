@@ -18,9 +18,9 @@ Alternatively, you can download the "DarkUnification Look and Feel Theme" using 
 - Once installed, click Close, select "DarkUnification", click "Use Desktop Layout from theme, and click Apply
 - The DarkUnification desktop will be applied
 
----------------------------------------------
-DarkUnification-Look-and-Feel notes
----------------------------------------------
+...........................................................
+DarkUnification-Look-and-Feel-with-Install-Script notes
+...........................................................
 
 May 2, 2019: Initial 0.1 release of DarkUnification-Look-and-Feel to github
 - Dependencies: sed tar
@@ -37,3 +37,5 @@ May 2, 2019: Initial 0.1 release of DarkUnification-Look-and-Feel to github
 - the first time it is used there are several KDE Plasma artifacts to download and install, so please be patient
 
 June 8, 2019: Renamed git repository to "DarkUnification-Look-and-Feel-with-Install-Script" to better differenciatte it from the standard "DarkUnification-Look-and-Feel-Theme" repository.
+
+June 20, 2019: Testing of several different Linux distros has successfully concluded
