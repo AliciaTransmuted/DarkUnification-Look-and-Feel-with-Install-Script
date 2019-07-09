@@ -24,6 +24,8 @@ DarkUnification-Look-and-Feel-with-Install-Script notes
 
 ...........................................................
 
+July 8, 2019: Version 1.0.1 adds 8 different face icons and updates install.sh
+
 May 2, 2019: Initial 0.1 release of DarkUnification-Look-and-Feel to github
 - Dependencies: sed tar
 - Download and extract anywhere in to your home directory... eg. under ~/Downloads
