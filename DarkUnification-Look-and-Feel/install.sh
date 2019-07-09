@@ -2,9 +2,9 @@
 
 #-------------------------------
 # install.sh
-# version 1.0
+# version 1.0.1
 # Install DarkUnification KDE Plasma 5 Look and Feel Theme
-# June 15, 2019
+# July 8, 2019
 # AliciaTransmuted
 # https://github.com/AliciaTransmuted/DarkUnification-Look-and-Feel-with-Install-Script
 # -------------------------------
@@ -92,6 +92,10 @@ temp_in_file="/home/""${username}""/.face"
 temp_out_dir="${backup_dir}"
 backup_file "${temp_in_file}" "${temp_out_dir}"
 
+temp_in_file="/home/""${username}""/.face.icon"
+temp_out_dir="${backup_dir}"
+backup_file "${temp_in_file}" "${temp_out_dir}"
+
 temp_in_file="/home/""${username}""/.config/gtk-3.0/settings.ini"
 temp_out_dir="${backup_dir}""/.config/gtk-3.0"
 backup_file "${temp_in_file}" "${temp_out_dir}"
@@ -129,6 +133,9 @@ add_to_log
 temp_dir="/home/""${username}""/Pictures/DarkUnification"
 make_dir "${temp_dir}"
 
+temp_dir="/home/""${username}""/Pictures/face"
+make_dir "${temp_dir}"
+
 temp_dir="/home/""${username}""/.local/share/color-schemes"
 make_dir "${temp_dir}"
 
@@ -138,9 +145,29 @@ make_dir "${temp_dir}"
 temp_dir="/home/""${username}""/.local/share/plasma"
 make_dir "${temp_dir}"
 
-/bin/cp -rf "${install_dir}"/plasma/look-and-feel/DarkUnification/contents/wallpaper/face ~/.face
+/bin/cp -rf "${install_dir}"/face/face ~/.face
+/bin/cp -rf "${install_dir}"/face/face ~/.face.icon
 
-/bin/cp -rf "${install_dir}"/plasma/look-and-feel/DarkUnification/contents/wallpaper/* ~/Pictures/DarkUnification
+/bin/cp -rf "${install_dir}"/wallpaper/* ~/Pictures/DarkUnification
+
+/bin/cp -rf "${install_dir}"/face/* ~/Pictures/face
+
+/bin/cp -rf ~/Pictures/face/face0000/face0000.png ~/Pictures/face/face0000/.face
+/bin/cp -rf ~/Pictures/face/face0000/face0000.png ~/Pictures/face/face0000/.face.icon
+/bin/cp -rf ~/Pictures/face/face0001/face0001.png ~/Pictures/face/face0001/.face
+/bin/cp -rf ~/Pictures/face/face0001/face0001.png ~/Pictures/face/face0001/.face.icon
+/bin/cp -rf ~/Pictures/face/face0100/face0100.png ~/Pictures/face/face0100/.face
+/bin/cp -rf ~/Pictures/face/face0100/face0100.png ~/Pictures/face/face0100/.face.icon
+/bin/cp -rf ~/Pictures/face/face0101/face0101.png ~/Pictures/face/face0101/.face
+/bin/cp -rf ~/Pictures/face/face0101/face0101.png ~/Pictures/face/face0101/.face.icon
+/bin/cp -rf ~/Pictures/face/face0200/face0200.png ~/Pictures/face/face0200/.face
+/bin/cp -rf ~/Pictures/face/face0200/face0200.png ~/Pictures/face/face0200/.face.icon
+/bin/cp -rf ~/Pictures/face/face0201/face0201.png ~/Pictures/face/face0201/.face
+/bin/cp -rf ~/Pictures/face/face0201/face0201.png ~/Pictures/face/face0201/.face.icon
+/bin/cp -rf ~/Pictures/face/face0300/face0300.png ~/Pictures/face/face0300/.face
+/bin/cp -rf ~/Pictures/face/face0300/face0300.png ~/Pictures/face/face0300/.face.icon
+/bin/cp -rf ~/Pictures/face/face0301/face0301.png ~/Pictures/face/face0301/.face
+/bin/cp -rf ~/Pictures/face/face0301/face0301.png ~/Pictures/face/face0301/.face.icon
 
 /bin/cp -rf "${install_dir}"/color-schemes/* ~/.local/share/color-schemes
 
@@ -211,14 +238,6 @@ make_dir "${temp_dir}"
 /bin/cp -rf "${install_dir}"/themes/* ~/.themes
 
 sed -i -e s/xxUSERNAMExx/"${username}"/g ~/.config/kscreenlockerrc
-
-# Popup Message
-/usr/bin/kdialog --title "Please Select 
-DarkUnification for GTK 2/3 Theme!
-Please Select 
-Icon Theme Ultimate Edition Dark Glass!" --passivepopup "This popup will disappear in 15 seconds" 15 &
-# GTK Theme setup
-/usr/bin/kcmshell5 kde-gtk-config 2>/dev/null
 
 log_entry="${log_heading_2}"
 add_to_log
