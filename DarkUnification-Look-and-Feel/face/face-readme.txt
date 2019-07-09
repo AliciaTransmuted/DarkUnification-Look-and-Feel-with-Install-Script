@@ -1,0 +1,4 @@
+- navigate to ~/Pictures/face
+- choose your favourite icon style
+- copy that .face and .face.icon to your home directory
+- changes should take effect immediately
