@@ -43,3 +43,5 @@ June 8, 2019: Renamed git repository to "DarkUnification-Look-and-Feel-with-Inst
 June 20, 2019: Testing of several different Linux distros has successfully concluded
 
 July 8, 2019: Version 1.0.1 adds 8 different face icons and updates install.sh
+
+February 7, 2022: The scripts no longer work as well under Ubuntu 20.04 LTS going forward. This appears to be a trend with most custom themes with scripts. However, if it doesn't completly work, try running the process again, it usually sets it right.
